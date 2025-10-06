@@ -1,18 +1,64 @@
-🎧 AudioKit Bluetooth Speaker — Rebirth in Code
+# 🎧 AudioKit Bluetooth Speaker via Phone Jack  
+**Transform your ESP32 AudioKit v2.2 into a Bluetooth receiver that plays audio through the 3.5 mm jack.**  
+Built with love, resilience, and a rediscovered passion for creativity through technology.
 
-Hi, I’m John.
+---
 
-As a kid, I was obsessed with my Amstrad CPC464 — I’d sit there for hours, typing out games line by line, completely lost in the magic of making something come alive on screen. Life took me in other directions: I became a mechanic, gardener, builder, roofer, scaffolder — I’ve worked with my hands all my life.
+## 💡 Overview
 
-Then everything changed. Health caught up with me, and I had to stop the physical graft. Around the same time, I went through a devastating breakup — a manipulative one, filled with financial deceit and lies. I lost not only my savings but, even worse, my two children for now — taken from my daily life by greed and bitterness. For two years I cried, trying to understand how someone could twist love into something so cruel.
+This project turns an **ESP32 AudioKit v2.2** board into a **Bluetooth speaker**.  
+It receives audio wirelessly from your phone and outputs sound via the onboard **3.5 mm audio jack** or **RCA ports**.
 
-But one day, my kids will understand. The truth always surfaces. And when it does, they’ll know their dad never stopped fighting — not with anger, but by rebuilding.
+What started as a troubleshooting experiment became something much deeper —  
+a symbol of rebuilding, rediscovery, and reclaiming a lifelong dream.
 
-Because out of all that pain, I found something I thought I’d lost — myself.
-Through tech, sound, and code, I found a way forward. I found purpose again.
+---
 
-Now, at 49, I’m teaching myself C++, Python, Bash, and Git.
-This project — the ESP32 AudioKit Bluetooth Speaker — is more than just a bit of code and hardware. It’s proof that you can start again, even from the ruins.
+## ❤️ The Story Behind the Code
 
-Because I was never finished.
-I just had to rebuild with different tools — and this time, it’s with purpose, clarity, and hope.
+> *“This isn’t just a project — it’s a turning point in my life.”*
+
+After years of hard physical work — from **gardening** to **mechanic**, **scaffolding**, **roofing**, **plastering**, and **joinery** —  
+I was forced to stop when **heart failure** changed everything.  
+
+During recovery, I lost almost everything that gave my life structure.  
+I went through a **manipulative breakup**, **financial fraud**, and worst of all, my **two kids were taken** from me through lies and greed.  
+For two years, I cried every day — missing them, questioning everything.  
+
+But then something inside me shifted.  
+I rediscovered the kid who once sat in front of an **Amstrad CPC464**, writing **a 1000-line BASIC card game**,  
+the boy who loved code and imagination.  
+
+Now, at **49**, I’ve found my new path — learning **C++**, **Python**, **Bash**, and **Git**.  
+Building circuits, fixing hardware, and bringing sound to life again.  
+
+This project — this **AudioKit Bluetooth Speaker** — is a symbol that not every day is a bad day.  
+It’s proof that rebuilding is possible.  
+It’s a reminder that **you can always start again**.
+
+One day, my kids will know the truth.  
+And they’ll see that their dad didn’t give up — he *rebuilt himself from scratch*.
+
+---
+
+## ⚙️ Hardware Setup
+
+| Component | Description |
+|------------|-------------|
+| **Board** | ESP32 AudioKit v2.2 (AI Thinker) |
+| **Audio Output** | 3.5 mm jack or RCA out |
+| **Power Supply** | 5 V USB-C or barrel jack |
+| **Bluetooth Role** | Audio Sink (receives audio from phone) |
+
+---
+
+## 🔧 Arduino Configuration
+
+**Board Manager:**  
+`ESP32 by Espressif Systems @ v2.0.14`
+
+**Libraries Used:**
+```text
+ESP32-A2DP @ 1.8.7
+AudioTools @ 1.2.0
+
