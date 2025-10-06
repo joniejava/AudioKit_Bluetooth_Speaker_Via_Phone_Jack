@@ -1,29 +1,29 @@
 # AudioKit_Bluetooth_Speaker_Via_Phone_Jack
 
-🎶 **ESP32 AudioKit v2.2 Bluetooth Audio Sink**  
-This project turns the ESP32 AudioKit board into a Bluetooth speaker that receives audio from your phone and plays it through the onboard DAC and 3.5 mm headphone jack.
+### 🎧 Description
+This project turns the ESP32 AudioKit v2.2 board into a Bluetooth speaker.  
+When paired with a phone, any audio streamed over Bluetooth is output via the 3.5mm headphone jack.
 
-## 🔧 Features
-- Acts as a **Bluetooth A2DP sink**
-- Outputs clear audio via the **3.5 mm jack**
-- Based on **AudioTools** and **ESP32-A2DP** libraries
-- Simple setup — no SD card or network required
-- Tested with iPhone and Android devices
+### 🧩 Hardware
+- ESP32 AudioKit v2.2
+- Standard 3.5mm headphones or speakers
 
-## 🧠 Requirements
-- ESP32 AudioKit v2.2 board  
-- Latest Arduino IDE  
+### 🛠️ Software
+- Arduino IDE 2.x
 - Libraries:
-  - `audio-tools` (v1.2.0 or newer)
-  - `ESP32-A2DP` (v1.8.7 or newer)
+  - `audio-tools` (latest)
+  - `ESP32-A2DP`
 
-## ⚙️ How to Use
-1. Flash the sketch to your ESP32 AudioKit.  
-2. Power up — it will advertise as **"AudioKit_ESP32"**.  
-3. Pair your phone and play audio — it will stream through the 3.5 mm output.
+### 🔧 Usage
+1. Upload the sketch `AudioKit_BT_Sink_Working_Base.ino`
+2. Check the serial monitor:
+   - Should display “✅ Advertising as 'AudioKit_ESP32'”
+3. On your phone, pair with **AudioKit_ESP32**
+4. Play music — sound comes through the 3.5mm jack 🎶
+
+### 🧠 Notes
+- Tested on ESP32 AudioKit v2.2
+- Works as a Bluetooth sink (not transmitter)
+- Volume controlled from the connected phone
 
 ---
-
-🧑‍💻 _Created and tested by John Hulme_  
-_Repository initialized from verified working base_
-
